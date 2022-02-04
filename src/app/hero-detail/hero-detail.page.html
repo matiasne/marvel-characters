@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title  size="small">
+      {{hero.name}}
+    </ion-title>    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-content fullscreen>
+    <app-item-details-hero [hero]="hero"></app-item-details-hero>
+  </ion-content>
+</ion-content>

@@ -1,0 +1,12 @@
+<ion-card class="hero-card">
+  <img class="hero-img" [src]="hero.thumbnail.path+'.'+hero.thumbnail.extension" />
+  <ion-card-header>
+    <ion-card-title class="hero-name">{{hero.name}}</ion-card-title>
+  </ion-card-header>
+  <ion-card-content class="hero-info">
+    <h2 class="title-other-info">{{titleOtherInfo}}</h2>
+    {{labelNumberOfComics}}: {{hero.comics.available}}<br>
+    {{labelNumberOfSeries}}: {{hero.series.available}}<br>
+    {{labelNumberOfStories}}: {{hero.stories.available}}
+  </ion-card-content>
+</ion-card>
